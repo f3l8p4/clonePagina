@@ -1,14 +1,13 @@
 <template>
-  <div>
-    <Header></Header>
-  </div>
-</template>
+    <div>
 
+    </div>
+</template>
 <script>
 export default {
   data () {
     return {
-      nome: 'felipe3'
+
     }
   }
 }

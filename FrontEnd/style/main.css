@@ -24,7 +24,7 @@
     @apply text-white opacity-70 hover:opacity-100 duration-300 border place-items-center
 }
 .departament-buttons{
-    @apply w-1/2 p-2 cursor-pointer hover:text-red-700 text-sm	
+    @apply w-1/2 p-2 cursor-pointer hover:text-red-700 text-sm 
 }
 .departament-header{
     background-color: #fafafa;

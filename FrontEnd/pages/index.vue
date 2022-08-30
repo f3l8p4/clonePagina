@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header></Header>
+    <Main></Main>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   data () {
     return {
-      nome: 'felipe3'
+
     }
   }
 }

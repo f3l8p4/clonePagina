@@ -8,32 +8,33 @@
     background-color: rgb(239,0,48); 
 }
 .allHeader{
-    @apply w-full h-16 drop-shadow-lg border
+    @apply w-full h-20 drop-shadow-lg 
 }
 .subHeader{
-    @apply container px-4 md:px-0 h-full mx-auto flex justify-between items-center mr-5 border mb-10 
+    @apply container px-4 md:px-0 h-full mx-auto flex justify-between items-center mr-5  mb-10 mb-10
 }
 .subHeader ul{
     @apply hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
-    md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 w-full border justify-between
+    md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 w-full justify-between
 }
 .subHeader ul li .selected{
     @apply md:hidden fixed top-4 right-6
 }
 .subHeader ul li{
-    @apply text-white opacity-70 hover:opacity-100 duration-300 border place-items-center
+    @apply text-white opacity-70 hover:opacity-100 duration-300 place-items-center
 }
 .departament-buttons{
-    @apply w-1/2 p-2 cursor-pointer hover:text-red-700 text-sm 
+    @apply w-1/2 pr-2 cursor-pointer hover:text-red-700 text-sm border flex place-items-center text-center	 
 }
 .departament-header{
     background-color: #fafafa;
+    @apply hover:border-b-red-700 flex mx-auto
 }
 .Search{
-    @apply border w-1/2 mr-20 flex
+    @apply w-1/2 mr-20 flex
 }
 .banner{
-    @apply mt-2 mb-4
+    @apply mt-2 mb-4 w-full
 }
 /*Input*/
 .inputSearch{
@@ -47,5 +48,5 @@
 }
  */
 .icon{
-    @apply flex place-items-center
+    @apply flex place-items-center cursor-pointer
 }

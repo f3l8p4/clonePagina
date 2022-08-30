@@ -2,7 +2,7 @@
     <div>
           <ul class="menu menu-horizontal border w-full flex justify-between">
             <li class="m-3 text-sm"> Informe seu cep</li>
-            <li class="m-3 text-sm" v-for="item in trending_topics" :key="item"> {{ item.type }} </li>
+            <li class="m-3 text-sm text-white" v-for="item in trending_topics" :key="item"> {{ item.type }} </li>
           </ul>
     </div>
 </template>

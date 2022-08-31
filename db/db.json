@@ -5,52 +5,47 @@
         "nome": "Computador",
         "descricao": "Pc com core i5 16 GB de ram com GTX 1660.",
         "preco": 8.500,
-        "categoria_id": 1
+        "stars": 2,
+        "avaliacoes": 88
       },
       {
         "id": 2,
         "nome": "Iphone",
         "descricao": "Iphone 6s com 128GB de Memória",
         "preco": 3.500,
-        "categoria_id": 1
+        "stars": 4,
+        "avaliacoes": 98
       },
       {
         "id": 3,
         "nome": "Playstation 4",
         "descricao": "Playstation 4 pro, com 4 Jogos e um controle",
         "preco": 4.500,
-        "categoria_id": 1
+        "stars": 3,
+        "avaliacoes": 887
       },
       {
         "id": 4,
         "nome": "Xbox One",
         "descricao": "Console com kinect mais 2 controles e 1 jogo",
         "preco": 4.250,
-        "categoria_id": 1
+        "stars": 5,
+        "avaliacoes": 152
       },
       {
         "id": 5,
         "nome": "Televisão 4k Android",
         "descricao": "Televisão 4k Com android de 80 polegadas",
         "preco": 5.500,
-        "categoria_id": 2
+        "avaliacoes": 159
       },
       {
         "id": 6,
         "nome": "Mouse Alienware",
         "descricao": "Mouse alienware com 4000 DPS",
         "preco": 250,
-        "categoria_id": 2
-      }
-    ],
-    "categorias": [
-      {
-        "id": 1,
-        "nome": "Hambúrgueres"
-      },
-      {
-        "id": 2,
-        "nome": "Refrigerantes"
+        "stars": 4,
+        "avaliacoes": 782
       }
     ]
   }

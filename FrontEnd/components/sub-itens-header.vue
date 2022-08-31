@@ -10,7 +10,7 @@
 export default {
   data () {
     return {
-      trending_topics: [{ type: 'Baixe o app' }, { type: 'Receba Hoje' }, { type: 'Cartão de crédito ame' }, { type: 'Marcas proprias' }, { type: 'Produtos Internacionais' }, { type: 'Venda na americanas' }, { type: 'Ofertas ' }]
+      trending_topics: [{ type: 'Baixe o app' }, { type: 'Receba Hoje' }, { type: 'Cartão de crédito ame' }, { type: 'Marcas proprias' }, { type: 'Produtos Internacionais' }, { type: 'Venda na americanas' }, { type: 'Ofertas' }]
     }
   }
 }

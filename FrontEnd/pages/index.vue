@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Main></Main>
+    <Main :products="products"></Main>
   </div>
 </template>
 
@@ -8,8 +8,17 @@
 export default {
   data () {
     return {
-
+      products: this.$store.state.api.products.data
     }
+  },
+  methods: {
+    loadProducts () {
+      this.$store.dispatch('api/getProducts')
+      console.log(this.products)
+    }
+  },
+  mounted () {
+    this.loadProducts()
   }
 }
 </script>

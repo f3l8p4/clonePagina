@@ -1,5 +1,5 @@
 export default {
   STORE (state, payload) {
-    state.produto = payload
+    state.products = payload
   }
 }

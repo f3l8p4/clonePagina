@@ -41,7 +41,10 @@
     @apply border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
 }
 
-
+.cards-products{
+    max-width: 14em;
+    @apply bg-white rounded overflow-hidden shadow-lg p-5
+}
 /*Icons 
 .badge{
     @apply inline-flex absolute -top-2 -right-2 justify-center items-center w-6 h-6 text-xs font-bold text-white bg-red-500 rounded-full border-2 border-white dark:border-gray-900

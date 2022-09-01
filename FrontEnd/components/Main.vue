@@ -10,9 +10,8 @@
             <Cards-subItems/>
         </div>
         <div class="m-3 mt-3">
-            <h3 class="text-xl text-bold text-gray ml-3 mb-3">Produtos mais vistos na americanas</h3>
+            <h3 class="text-md font-bold text-gray-400 ml-3 mb-3">Produtos mais vistos na americanas</h3>
             <Cards-most-viewed-products :products="products"/>
-            {{products}}
         </div>
     </div>
 </template>

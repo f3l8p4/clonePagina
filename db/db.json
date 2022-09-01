@@ -6,7 +6,8 @@
         "descricao": "Pc com core i5 16 GB de ram com GTX 1660.",
         "preco": 8.500,
         "stars": 2,
-        "avaliacoes": 88
+        "avaliacoes": 88,
+        "img_capa": "https://files.tecnoblog.net/wp-content/uploads/2022/03/wallpaper-700x394.jpg"
       },
       {
         "id": 2,
@@ -14,7 +15,8 @@
         "descricao": "Iphone 6s com 128GB de Memória",
         "preco": 3.500,
         "stars": 4,
-        "avaliacoes": 98
+        "avaliacoes": 98,
+        "img_capa": "https://t2.tudocdn.net/97034?w=1200&fit=clip"
       },
       {
         "id": 3,
@@ -22,7 +24,8 @@
         "descricao": "Playstation 4 pro, com 4 Jogos e um controle",
         "preco": 4.500,
         "stars": 3,
-        "avaliacoes": 887
+        "avaliacoes": 887,
+        "img_capa": "https://images-na.ssl-images-amazon.com/images/I/71jN27mYlhL._SL1500_.jpg"
       },
       {
         "id": 4,
@@ -30,14 +33,16 @@
         "descricao": "Console com kinect mais 2 controles e 1 jogo",
         "preco": 4.250,
         "stars": 5,
-        "avaliacoes": 152
+        "avaliacoes": 152,
+        "img_capa": "https://files.tecnoblog.net/wp-content/uploads/2020/12/Xbox-One-500GBa-700x700.jpg"
       },
       {
         "id": 5,
         "nome": "Televisão 4k Android",
         "descricao": "Televisão 4k Com android de 80 polegadas",
         "preco": 5.500,
-        "avaliacoes": 159
+        "avaliacoes": 159,
+        "img_capa": "https://files.tecnoblog.net/wp-content/uploads/2020/12/Xbox-One-500GBa-700x700.jpg"
       },
       {
         "id": 6,
@@ -45,7 +50,8 @@
         "descricao": "Mouse alienware com 4000 DPS",
         "preco": 250,
         "stars": 4,
-        "avaliacoes": 782
+        "avaliacoes": 782,
+        "img_capa": "https://images-americanas.b2w.io/produtos/4775139761/imagens/mouse-gamer-dell-alienware-elite-aw959-bk-rgb-preto-prata/4775139761_1_large.jpg"
       }
     ]
   }

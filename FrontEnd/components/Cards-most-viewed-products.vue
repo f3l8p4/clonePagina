@@ -1,6 +1,6 @@
 <template>
     <div>
-      <Cards-products v-for="item in products" :key="item"  :products="products"/>
+      <Cards-products v-for="product in products" :key="product.id" :product="products"/>
     </div>
 </template>
 <script>
@@ -10,6 +10,9 @@ export default {
     return {
 
     }
+  },
+  mounted () {
+    console.log(this.products)
   }
 }
 </script>

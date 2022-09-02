@@ -21,14 +21,14 @@
     @apply md:hidden fixed top-4 right-6
 }
 .subHeader ul li{
-    @apply text-white opacity-70 hover:opacity-100 duration-300 place-items-center
+    @apply text-white opacity-70 hover:opacity-100 duration-300 text-center
 }
 .departament-buttons{
-    @apply w-1/2 pr-2 cursor-pointer hover:text-red-700 text-sm border flex place-items-center text-center	 
+    @apply w-1/2 pr-2 cursor-pointer hover:text-red-700 text-sm border flex place-items-center text-center
 }
 .departament-header{
     background-color: #fafafa;
-    @apply hover:border-b-red-700 flex mx-auto
+    @apply hover:border-b-red-700 flex mx-auto text-center
 }
 .Search{
     @apply w-1/2 mr-20 flex
@@ -52,4 +52,7 @@
  */
 .icon{
     @apply flex place-items-center cursor-pointer
+}
+.icons-Footer{
+    
 }

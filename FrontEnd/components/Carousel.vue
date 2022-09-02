@@ -11,7 +11,7 @@
             <div id="slide2" class="carousel-item relative w-full">
               <img src="https://images-americanas.b2w.io/spacey/acom/2022/08/26/VISA-americanas-home-destaque-desktop-1250x313-453a0cb3df51.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle text-red-100">❮</a>
                 <a href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div>

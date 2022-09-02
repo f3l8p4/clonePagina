@@ -14,7 +14,6 @@ export default {
   methods: {
     loadProducts () {
       this.$store.dispatch('api/getProducts')
-      console.log(this.products)
     }
   },
   mounted () {

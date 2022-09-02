@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div v-for="item in products" :key="item" class="p-2 flex">
+        <div class="p-2 flex">
             <div class="cards-products place-items-center">
               <img class="" src="https://images-americanas.b2w.io/produtos/01/00/img/4533174/8/4533174812P1.jpg">
               <div class="px-3 py-2">
-                <div class="font-bold text-md mb-1">Mountain</div>
+                <div class="font-bold text-md mb-1">{{products.name}}</div>
                 <div class="rating rating-xs">
                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
@@ -28,6 +28,9 @@
 </template>
 <script>
 export default {
-  props: ['products']
+  props: ['product'],
+  mounted () {
+    console.log(this.product)
+  }
 }
 </script>

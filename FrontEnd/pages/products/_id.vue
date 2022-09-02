@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nuxt-link to="/">Goto</nuxt-link>
+        <Product-view/>
     </div>
 </template>
 <script>

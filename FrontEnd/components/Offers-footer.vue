@@ -1,9 +1,9 @@
 <template>
     <div class="mt-3">
         <div class="p1 w-3/4">
-            <ul class=" flex items-center">
-                <li v-for="offers in offers_footer" :key="offers" class="border text-xs text-bold cursor-pointer flex">{{offers.offer}}</li>
-            </ul>
+          <div v-for="offers in offers_footer" :key="offers" class="border text-xs text-bold cursor-pointer">
+            {{offers.offer}}
+          </div>
         </div>
     </div>
 </template>

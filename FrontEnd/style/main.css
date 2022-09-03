@@ -43,7 +43,7 @@
 
 .cards-products{
     max-width: 14em;
-    @apply bg-white rounded overflow-hidden shadow-lg p-5 inline 
+    @apply bg-white rounded overflow-hidden shadow-lg p-5 border-gray-400
 }
 /*Icons 
 .badge{
@@ -54,5 +54,5 @@
     @apply flex place-items-center cursor-pointer
 }
 .icons-Footer{
-    
+    @apply mr-2 cursor-pointer
 }

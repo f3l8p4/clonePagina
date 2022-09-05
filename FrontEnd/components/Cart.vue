@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!-- <div class="badge">20</div> -->
+        <span class="badge badge-outline">0</span>
         <svg width="25"
         height="24"
         aria-labelledby="headerShoppingBasketIcon headerShoppingBasketDesc"

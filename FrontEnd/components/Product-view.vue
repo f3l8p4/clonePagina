@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="my-3">
         <div class="text-xs mx-3 my-3 breadcrumbs">
             <ul>
               <li>Pagina inicial</li>
@@ -34,23 +34,47 @@
                       <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
                       <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
                     </div>
-                    <h4 class="mr-2">rate</h4>
-                    <span class="mr-2"> 12(Avaliações) </span>
-                    <span class="mr-2"> 11 perguntas </span>
+                    <h4 class="mx-2">rate</h4>
+                    <span class="mx-2"> 12(Avaliações) </span>
+                    <span class="mx-2"> 11 perguntas </span>
                   </nav>
                   <nav class="flex flex-col">
                     <span class="text-sm my-3 mb-5 p-2">
-                      Descricao
+                      Lorem ipsum dolor sit amet consectur
                     </span>
-                    <span class="text-xs text-gray-400 underline mb-5"> Mais informações</span>
-                    <span class="text-xs text-gray-400 underline">Politica de trocas e devoluções</span>
+                    <span class="text-xs text-gray-500 cursor-pointer underline mb-5"> Mais informações</span>
+                    <span class="text-xs text-gray-500 text-gray-500 cursor-pointer underline">Politica de trocas e devoluções</span>
                   </nav>
                 </div>
               </div>
             </section>
 
             <section class="w-2/5 my-4 bg-white">
-              s
+              <div class="mt-4 p-3">
+                <nav class="flex flex-col">
+                  <span class="text-xl font-extrabold mt-3">R$ 88,50 </span>
+                  <span class="text-xs text-gray-500 flex"><svg viewBox="0 0 33 23" fill="#666" xmlns="http://www.w3.org/2000/svg" width="15" height="15" class="mr-2"><path fill-rule="evenodd" clip-rule="evenodd" d="M32.75 3.781A2.844 2.844 0 0029.906.937H3.094A2.844 2.844 0 00.25 3.781V19.22a2.844 2.844 0 002.844 2.843h26.812a2.844 2.844 0 002.844-2.843V3.78zM2.687 19.22V11.5h27.625v7.719a.406.406 0 01-.406.406H3.094a.406.406 0 01-.407-.406zm0-12.594h27.625V3.781a.406.406 0 00-.406-.406H3.094a.406.406 0 00-.407.406v2.844zm23.97 10.563H21.78a1.219 1.219 0 110-2.438h4.875a1.219 1.219 0 010 2.438z"></path></svg> ate 12x no cartão sem juros</span>
+                  <span class="text-xs text-gray-500 underline mt-2 mb-4">Mais formas de pagamento</span>
+                </nav>
+                <nav class="flex border rounded p-3 ">
+                  <svg width="20" height="20" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg" margintop="-1px" class="ame-box__AmeIconUI-sc-46mde0-7 ljegCR"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.215.001h8.236a1.985 1.985 0 011.457.567l1.049 1.034v-.007l1.064 1.053a2.166 2.166 0 01.1 2.982l-.003.003-.003.004-2.502 2.466-.704.693-3.18 3.134a1.99 1.99 0 01-2.791 0l.44-.445-.44.445-3.18-3.134-.703-.692C1.736 6.804.565 5.652.552 5.637l-.003-.004-.003-.003a2.165 2.165 0 01.1-2.982L1.71 1.595v.007L2.759.568A1.983 1.983 0 014.215.001zM1.488 3.575a.914.914 0 00-.012 1.22 2237.875 2237.875 0 013.16 3.11l3.18 3.134-.422.429.422-.429c.141.14.327.21.517.211.19 0 .377-.071.518-.21l.438.444-.438-.445 3.18-3.133.929-.915 2.23-2.196a.915.915 0 00-.011-1.22L13.03 1.459a.733.733 0 00-.546-.208H4.181a.733.733 0 00-.545.208L1.488 3.575z" fill="#ED0059"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58.626C3.58.28 3.86 0 4.204 0h8.256a.626.626 0 01.024 1.252.73.73 0 00-.49.208L9.728 3.694c-.771.76-2.018.76-2.79 0L4.672 1.46a.733.733 0 00-.49-.21.626.626 0 01-.603-.625zm2.66.624l1.575 1.553a.743.743 0 001.036 0m0 0l1.577-1.553H6.239" fill="#ED0059"></path></svg>
+                  <span class="text-xs ml-2 text-gray-500">ganhe <span class="font-bold">R$ 2,00</span> de volta na Ame pagando com cartão de crédito</span>
+                </nav>
+                <nav class="border rounded mt-3 mb-5 p-2">
+                  <span class="text-xs text-gray-500 font-bold">Calcular o frete e o prazo</span>
+                  <input type="text" class="input input-bordered input-sm" placeholder="Digite seu cep">
+                  <button class="btn btn-sm btn-error btn-outline">Ok</button>
+                </nav>
+                <nav class="flex flex-col justify-center">
+                  <button class="btn btn-error btn-wide text-white">
+                    <svg width="25" height="24" viewBox="0 0 25 25" fill="none" class="mx-2"><path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14.334 2.5l7.5 6.294h1.833a1 1 0 010 2h-.123l-1.492 11.362c-.14 1.058-1.001 1.971-2.283 1.971H4.901c-1.281 0-2.144-.913-2.283-1.971L1.123 10.794H1a1 1 0 110-2h1.833l7.5-6.294a2 2 0 014 0zm-2 2c.353 0 .684-.091.972-.252l5.417 4.546H5.944l5.418-4.546c.287.16.619.252.972.252zM3.14 10.794h18.386L20.07 21.895c-.018.133-.112.232-.3.232H4.901c-.188 0-.283-.1-.3-.232l-1.46-11.1zm14.86 2a1 1 0 00-1 1v6a1 1 0 102 0v-6a1 1 0 00-1-1zm-4.778 1a1 1 0 112 0v6a1 1 0 11-2 0v-6zm-2.778-1a1 1 0 00-1 1v6a1 1 0 102 0v-6a1 1 0 00-1-1zm-4.778 1a1 1 0 112 0v6a1 1 0 11-2 0v-6z"
+                    fill="#fff"></path></svg>
+                    Comprar
+                  </button>
+                  <span class="text-sm text-gray-500">Este produto é vendido por americanas</span>
+                </nav>
+              </div>
             </section>
           </main>
     </div>

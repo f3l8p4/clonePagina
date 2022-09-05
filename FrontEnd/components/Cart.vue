@@ -12,7 +12,6 @@
         fill="#fff"></path></svg>
     </div>
 </template>
-
 <script>
 export default {
 

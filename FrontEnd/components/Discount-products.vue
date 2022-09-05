@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Cards-product v-for="product in products" :key="product" :product="products"/>
+    <Cards-product v-for="product in products" :key="product" :product="product"/>
   </div>
 </template>
 <script>

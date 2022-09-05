@@ -1,6 +1,6 @@
 <template>
     <div>
-      <Cards-product @click="goToPage()" v-for="product in products" :key="product.id" :product="products"/>
+      <Cards-product @click="goToPage()" v-for="product in products" :key="product.id" :product="product"/>
     </div>
 </template>
 <script>

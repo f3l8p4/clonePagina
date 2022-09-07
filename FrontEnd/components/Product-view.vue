@@ -21,18 +21,14 @@
                   </div>
 
                   <div>
-                    <img  src="https://images-americanas.b2w.io/produtos/01/00/img/4806650/1/4806650109_5GG.jpg">
+                    <img  :src="$route.params.img_capa">
                   </div>
                 </div>
-                <div class="my-3 px-5 w- border">
-                  <h3 class="px-2 text-lg"> Jogo de panelas tramontina </h3>
+                <div class="my-3 px-5 ">
+                  <h3 class="px-2 text-lg text-gray-500 font-bold"> {{$route.params.nome}} </h3>
                   <nav class="flex text-xs p-2">
                     <div class="rating rating-xs">
-                      <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" checked />
-                      <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                      <input v-for="star in product.stars" :key="star" type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
                     </div>
                     <h4 class="mx-2">rate</h4>
                     <span class="mx-2"> 12(Avaliações) </span>
@@ -40,19 +36,24 @@
                   </nav>
                   <nav class="flex flex-col">
                     <span class="text-sm my-3 mb-5 p-2">
-                      Lorem ipsum dolor sit amet consectur
+                      {{$route.params.descricao}}
                     </span>
-                    <span class="text-xs text-gray-500 cursor-pointer underline mb-5"> Mais informações</span>
+                    <span class="text-xs text-gray-500 cursor-pointer underline mb-7"> Mais informações</span>
                     <span class="text-xs text-gray-500 text-gray-500 cursor-pointer underline">Politica de trocas e devoluções</span>
                   </nav>
                 </div>
               </div>
+              <div>
+                <div class="my-7 mx-5">
+                  <img class="border" width="80" :src="$route.params.img_1" alt="">
+                </div>
+              </div>
             </section>
 
-            <section class="w-2/5 my-4 bg-white">
+            <section class="w-2/5 my-4 bg-white flex">
               <div class="mt-4 p-3">
                 <nav class="flex flex-col">
-                  <span class="text-xl font-extrabold mt-3">R$ 88,50 </span>
+                  <span class="text-xl font-extrabold mt-3">R$ {{$route.params.preco}}</span>
                   <span class="text-xs text-gray-500 flex"><svg viewBox="0 0 33 23" fill="#666" xmlns="http://www.w3.org/2000/svg" width="15" height="15" class="mr-2"><path fill-rule="evenodd" clip-rule="evenodd" d="M32.75 3.781A2.844 2.844 0 0029.906.937H3.094A2.844 2.844 0 00.25 3.781V19.22a2.844 2.844 0 002.844 2.843h26.812a2.844 2.844 0 002.844-2.843V3.78zM2.687 19.22V11.5h27.625v7.719a.406.406 0 01-.406.406H3.094a.406.406 0 01-.407-.406zm0-12.594h27.625V3.781a.406.406 0 00-.406-.406H3.094a.406.406 0 00-.407.406v2.844zm23.97 10.563H21.78a1.219 1.219 0 110-2.438h4.875a1.219 1.219 0 010 2.438z"></path></svg> ate 12x no cartão sem juros</span>
                   <span class="text-xs text-gray-500 underline mt-2 mb-4">Mais formas de pagamento</span>
                 </nav>
@@ -63,10 +64,10 @@
                 <nav class="border rounded mt-3 mb-5 p-2">
                   <span class="text-xs text-gray-500 font-bold">Calcular o frete e o prazo</span>
                   <input type="text" class="input input-bordered input-sm" placeholder="Digite seu cep">
-                  <button class="btn btn-sm btn-error btn-outline">Ok</button>
+                  <button class="btn btn-sm btn-error btn-outline no-animation">Ok</button>
                 </nav>
                 <nav class="flex flex-col justify-center">
-                  <button class="btn btn-error btn-wide text-white">
+                  <button @click="addCart()" class="btn btn-error btn-wide text-white no-animation">
                     <svg width="25" height="24" viewBox="0 0 25 25" fill="none" class="mx-2"><path fill-rule="evenodd" clip-rule="evenodd"
                     d="M14.334 2.5l7.5 6.294h1.833a1 1 0 010 2h-.123l-1.492 11.362c-.14 1.058-1.001 1.971-2.283 1.971H4.901c-1.281 0-2.144-.913-2.283-1.971L1.123 10.794H1a1 1 0 110-2h1.833l7.5-6.294a2 2 0 014 0zm-2 2c.353 0 .684-.091.972-.252l5.417 4.546H5.944l5.418-4.546c.287.16.619.252.972.252zM3.14 10.794h18.386L20.07 21.895c-.018.133-.112.232-.3.232H4.901c-.188 0-.283-.1-.3-.232l-1.46-11.1zm14.86 2a1 1 0 00-1 1v6a1 1 0 102 0v-6a1 1 0 00-1-1zm-4.778 1a1 1 0 112 0v6a1 1 0 11-2 0v-6zm-2.778-1a1 1 0 00-1 1v6a1 1 0 102 0v-6a1 1 0 00-1-1zm-4.778 1a1 1 0 112 0v6a1 1 0 11-2 0v-6z"
                     fill="#fff"></path></svg>
@@ -81,6 +82,23 @@
 </template>
 <script>
 export default {
-
+  data () {
+    return {
+      product: {
+        id: this.$route.params.id,
+        nome: this.$route.params.nome,
+        preco: this.$route.params.preco,
+        img_capa: this.$route.params.img_capa,
+        avaliacoes: this.$route.params.avaliacoes,
+        stars: this.$route.params.stars
+      }
+    }
+  },
+  methods: {
+    addCart (product) {
+      this.$store.commit('cart/addCart', this.product)
+      console.log('Produto Adicionado com sucesso')
+    }
+  }
 }
 </script>

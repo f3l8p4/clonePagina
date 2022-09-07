@@ -27,15 +27,22 @@
             <h3 class="sections-description">Os telefones mais vendidos</h3>
             <The-smartphones-most-sold  class="flex p-3" :products="products"/>
         </div>
+        <div class="sections-main">
+            <h3 class="sections-description">Os mais vendidos com desconto</h3>
+            <The-best-seller-discount class="flex p-3" :products="products"/>
+        </div>
+        <div class="sections-main">
+            <h3 class="sections-description">os produtos que chegam rapidinho até você</h3>
+            <Most-fastest-products class="flex p-3" :products="products"/>
+        </div>
+        <div class="section-main">
+            <h3 class="sections-description">os mais vendidos das nossas lojas</h3>
+            <Best-sellers-market class="flex p-3" :products="products"/>
+        </div>
     </div>
 </template>
 <script>
 export default {
-  props: ['products'],
-  data () {
-    return {
-
-    }
-  }
+  props: ['products']
 }
 </script>

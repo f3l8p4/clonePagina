@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="">
         <Product-view/>
     </div>
 </template>

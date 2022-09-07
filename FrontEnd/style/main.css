@@ -24,25 +24,26 @@
     @apply text-white opacity-70 hover:opacity-100 duration-300 text-center
 }
 .departament-buttons{
-    @apply w-1/2 pr-2 cursor-pointer hover:text-red-700 text-sm border flex place-items-center text-center
+    @apply w-1/2 pr-2 cursor-pointer hover:text-red-700 text-sm place-items-center text-center
 }
 .departament-header{
     background-color: #fafafa;
-    @apply hover:border-b-red-700 flex mx-auto text-center
+    @apply hover:border-b-red-700 mx-auto
 }
 .Search{
-    @apply w-1/2 mr-20 flex
+    @apply w-1/2 mr-20 flex justify-end	
 }
 .banner{
     @apply mt-2 mb-4 w-full
 }
 /*Input*/
 .inputSearch{
-    @apply border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+    @apply border-gray-300 text-gray-900 text-sm rounded-lg block w-full pl-10 p-2.5
 }
 
 .cards-products{
-    max-width: 14em;
+    max-width: 12.5em;
+    min-width: 12.5em;
     @apply bg-white rounded overflow-hidden shadow-lg px-5 border-gray-400
 }
 .sections-main{
@@ -57,7 +58,10 @@
 }
  */
 .icon{
-    @apply flex place-items-center cursor-pointer
+    @apply flex place-items-center cursor-pointer mx-2
+}
+.icon-cart{
+    @apply flex flex-col place-items-center cursor-pointer mx-2
 }
 .icons-Footer{
     @apply mr-2 cursor-pointer

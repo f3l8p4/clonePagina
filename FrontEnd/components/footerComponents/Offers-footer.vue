@@ -1,7 +1,7 @@
 <template>
     <div class="mt-3">
         <div class="p1 w-3/4 flex text-center">
-          <div v-for="offers in offers_footer" :key="offers" class="border mx-4 p-2 text-xs text-bold cursor-pointer">
+          <div v-for="offers in offers_footer" :key="offers" class="flex mx-4 p-2 text-xs text-bold cursor-pointer text-center">
             {{offers.offer}}
           </div>
         </div>

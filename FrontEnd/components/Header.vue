@@ -13,9 +13,9 @@
                         <li class="Search">
                             <form class="flex w-full items-center">
                                 <div class="relative w-full">
-                                    <input type="text" class="inputSearch">
+                                    <input type="text" placeholder="Busque aqui seu produto" class="inputSearch">
                                     <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
                                     </div>
                                 </div>
                             </form>
@@ -49,8 +49,8 @@
                             viewBox="0 0 24 24"
                             fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.23 3.176c-1.921-.193-3.932.57-5.162 1.92L12 5.172l-.068-.076c-1.23-1.35-3.24-2.113-5.163-1.92-2.698.27-4.519 2.287-4.519 5.574 0 2.806 3.092 6.757 9.26 12.068a.75.75 0 00.986-.005c6.169-5.432 9.254-9.374 9.254-12.063 0-3.287-1.821-5.305-4.52-5.574zm-5.235 16.077l-.327-.287C6.385 14.306 3.75 10.839 3.75 8.75c0-2.517 1.238-3.889 3.168-4.082 1.791-.179 3.704.753 4.411 2.167a.75.75 0 001.342 0c.707-1.414 2.62-2.346 4.41-2.167 1.931.193 3.169 1.565 3.169 4.082 0 1.979-2.643 5.45-7.928 10.21l-.327.293z"></path></svg>
                         </li>
-                        <li class="icon">
-                            <Cart/>
+                        <li tabindex="0" class="icon-cart relative dropdown dropdown-left">
+                            <Cart :count="count" :productToCart="productToCart" :cart="cart" />
                         </li>
                     </ul>
                     <div class="flex items-center md:hidden">
@@ -66,6 +66,10 @@
 
 <script>
 export default {
-
+  data () {
+    return {
+      cart: this.$store.state.cart.cart
+    }
+  }
 }
 </script>

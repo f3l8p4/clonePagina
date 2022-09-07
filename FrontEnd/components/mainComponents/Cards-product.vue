@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="p-2 cursor-pointer">
+        <div @click="goToPage(product)" class="p-2 cursor-pointer">
             <div class="cards-products place-items-center">
               <div class="auto">
                 <img :src="product.img_capa">
@@ -26,6 +26,23 @@ export default {
   data () {
     return {
       stars: this.product.stars
+    }
+  },
+  methods: {
+    goToPage (product) {
+      this.$router.push({
+        name: 'products-id',
+        params: {
+          id: product.id,
+          nome: product.nome,
+          descricao: product.descricao,
+          preco: product.preco,
+          avaliacoes: product.avaliacoes,
+          stars: product.stars,
+          img_capa: product.img_capa,
+          img_1: product.img_1
+        }
+      })
     }
   }
 }

@@ -49,7 +49,7 @@
                             viewBox="0 0 24 24"
                             fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.23 3.176c-1.921-.193-3.932.57-5.162 1.92L12 5.172l-.068-.076c-1.23-1.35-3.24-2.113-5.163-1.92-2.698.27-4.519 2.287-4.519 5.574 0 2.806 3.092 6.757 9.26 12.068a.75.75 0 00.986-.005c6.169-5.432 9.254-9.374 9.254-12.063 0-3.287-1.821-5.305-4.52-5.574zm-5.235 16.077l-.327-.287C6.385 14.306 3.75 10.839 3.75 8.75c0-2.517 1.238-3.889 3.168-4.082 1.791-.179 3.704.753 4.411 2.167a.75.75 0 001.342 0c.707-1.414 2.62-2.346 4.41-2.167 1.931.193 3.169 1.565 3.169 4.082 0 1.979-2.643 5.45-7.928 10.21l-.327.293z"></path></svg>
                         </li>
-                        <li tabindex="0" class="icon-cart relative dropdown dropdown-left">
+                        <li tabindex="0" class="icon-cart dropdown dropdown-left">
                             <Cart :count="count" :productToCart="productToCart" :cart="cart" />
                         </li>
                     </ul>
@@ -57,6 +57,10 @@
                         <button class="text-white text-4xl font-bold opacity-70 hover:opacity-100 duration-300"> &#9776; </button>
                     </div>
                 </div>
+                <ul v-for="cartItens in cart" :key="cartItens.id" tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>{{cartItens.nome}}</a></li>
+                    <li><a>{{cartItens.preco}}</a></li>
+                  </ul>
                 </header>
                 <sub-itens-header/>
         </div>

@@ -13,6 +13,6 @@
 </template>
 <script>
 export default {
-  props: ['count', 'productToCart', 'cart']
+  props: ['cart']
 }
 </script>

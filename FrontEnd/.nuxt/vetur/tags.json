@@ -1,0 +1,65 @@
+{
+  "BannerMain": {
+    "description": "Auto imported from components/Banner-main.vue"
+  },
+  "BestSellersMarket": {
+    "description": "Auto imported from components/Best-sellers-market.vue"
+  },
+  "CardsMostViewedProducts": {
+    "description": "Auto imported from components/Cards-most-viewed-products.vue"
+  },
+  "CardsProduct": {
+    "description": "Auto imported from components/Cards-product.vue"
+  },
+  "CardsSubItems": {
+    "description": "Auto imported from components/Cards-subItems.vue"
+  },
+  "Carousel": {
+    "description": "Auto imported from components/Carousel.vue"
+  },
+  "Cart": {
+    "description": "Auto imported from components/Cart.vue"
+  },
+  "CategoryProductCards": {
+    "description": "Auto imported from components/Category-product-cards.vue"
+  },
+  "DepartamentsHeader": {
+    "description": "Auto imported from components/departaments-header.vue"
+  },
+  "DiscountProducts": {
+    "description": "Auto imported from components/Discount-products.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "IconsFooter": {
+    "description": "Auto imported from components/Icons-footer.vue"
+  },
+  "Main": {
+    "description": "Auto imported from components/Main.vue"
+  },
+  "MostFastestProducts": {
+    "description": "Auto imported from components/Most-fastest-products.vue"
+  },
+  "OffersFooter": {
+    "description": "Auto imported from components/Offers-footer.vue"
+  },
+  "ProductView": {
+    "description": "Auto imported from components/Product-view.vue"
+  },
+  "SerivcesFooter": {
+    "description": "Auto imported from components/Serivces-footer.vue"
+  },
+  "SubItensHeader": {
+    "description": "Auto imported from components/sub-itens-header.vue"
+  },
+  "TheBestSellerDiscount": {
+    "description": "Auto imported from components/The-best-seller-discount.vue"
+  },
+  "TheSmartphonesMostSold": {
+    "description": "Auto imported from components/The-smartphones-most-sold.vue"
+  }
+}

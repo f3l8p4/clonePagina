@@ -1,10 +1,5 @@
 <template>
-  <Header></Header>
-  <Nuxt class="content"/>
-  <Footer></Footer>
+  <div>
+    <Nuxt class="content"/>
+  </div>
 </template>
-<script>
-export default {
-  
-}
-</script>

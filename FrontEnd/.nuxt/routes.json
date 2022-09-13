@@ -3,14 +3,12 @@
     "name": "products-id",
     "path": "/products/:id?",
     "component": "E:\\\\Documentos em gerais\\\\clonePagina\\\\frontend\\\\pages\\\\products\\\\_id.vue",
-    "chunkName": "pages/products/_id",
-    "_name": "_18f22566"
+    "chunkName": "pages/products/_id"
   },
   {
     "name": "index",
     "path": "/",
     "component": "E:\\\\Documentos em gerais\\\\clonePagina\\\\frontend\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_8095f63c"
+    "chunkName": "pages/index"
   }
 ]

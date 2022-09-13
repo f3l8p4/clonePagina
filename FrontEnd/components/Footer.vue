@@ -16,17 +16,14 @@
                nas americanas</span>
               <Icons-footer></Icons-footer>
           </div>
-          <span class="text-xs ml-3">americanas s.a. / CNPJ: 00.776.574/0006-60 / Inscrição Estadual: 85.687.08-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902 / fale com a gente</span>
-          <span>Mapa do site</span>
+          <div class="flex flex-col text-center">
+            <span class="text-xs ml-3">americanas s.a. / CNPJ: 00.776.574/0006-60 / Inscrição Estadual: 85.687.08-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902 / fale com a gente</span>
+            <span class="text-sm text-gray-400 mt-3 cursor-pointer">Mapa do site</span>
+          </div>
         </div>
     </footer>
 </template>
 <script>
 export default {
-  data () {
-    return {
-
-    }
-  }
 }
 </script>
